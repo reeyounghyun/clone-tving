@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './img/logo.png';
 import Search from './img/icon_search.svg';
 import Profile from './img/profile.png';
 
@@ -12,7 +11,7 @@ function Header() {
         <div className='flex items-center justify-between'>
           <div className='flex items-center h-[64px]'>
             <div className='mr-[2rem]'>
-              <img src={Logo} width={117} height={48} alt="Logo" />
+              <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/img/logo.png?raw=true' width={117} height={48} alt="Logo" />
             </div>
             <nav className='nav'>
               <ul className='flex items-center gap-3'>
