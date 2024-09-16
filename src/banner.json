@@ -15,9 +15,16 @@
   },
   {
     "id": 1,
-    "title": "신한",
+    "title": "가족멜로",
     "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/1723169426-1.webp",
     "createdAt": 1591714800000,
     "updatedAt": 1591714800000
   },
+  {
+    "id": 1,
+    "title": "우씨황우",
+    "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/1724805183-1.webp",
+    "createdAt": 1591714800000,
+    "updatedAt": 1591714800000
+  }
 ]
