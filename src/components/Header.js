@@ -1,6 +1,4 @@
 import React from 'react';
-import Search from './img/icon_search.svg';
-import Profile from './img/profile.png';
 
 function Header() {
   const navItems = ['시리즈', '영화', '라이브', 'KBO'];  // 문자열 배열로 수정
@@ -28,10 +26,10 @@ function Header() {
           </div>
           <div className='flex items-center gap-6'>
             <div className=''>
-              <img src={Search} width={36} height={36} alt="search" />
+              <img src='https://raw.githubusercontent.com/reeyounghyun/clone-tving/332e729af40efb742d0c17a3cbd5b020edfdab88/public/img/icon_search.svg' width={36} height={36} alt="search" />
             </div> 
             <div className=''>
-              <img src={Profile} width={36} height={36} alt="profile" />
+              <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/img/profile.png?raw=true' width={36} height={36} alt="profile" />
             </div> 
           </div>
         </div>
