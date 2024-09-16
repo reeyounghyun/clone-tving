@@ -4,7 +4,7 @@ import 'swiper/css';
 import './ReviewList.css';
 import './common.css';
 
-function ReviewTopItem({ item, index }) {
+function BannerItem({ item, index }) {
   return (
     <div className="ReviewTopItem relative">
       <div className="relative flex flex-row-reverse items-end">
@@ -21,7 +21,7 @@ function ReviewTopItem({ item, index }) {
   );
 }
 
-function ReviewTopList({ items }) {
+function BannerList({ items }) {
   return (
     <div className="ReviewTopList lists pt-[1.333rem] pb-[1.333rem] relative">
       <Swiper
@@ -34,7 +34,7 @@ function ReviewTopList({ items }) {
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <ReviewTopItem item={item} index={index} />
+            <BannerItem item={item} index={index} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -42,4 +42,4 @@ function ReviewTopList({ items }) {
   );
 }
 
-export default ReviewTopList;
+export default BannerList;

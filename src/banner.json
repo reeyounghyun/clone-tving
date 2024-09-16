@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "엄마친구아들",
-    "imgUrl": "https://github.com/reeyounghyun/clone-tving/blob/main/src/components/img/1726101127-1.jpg?raw=true",
-    "titleImgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/1724199450-2.webp",
+    "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/public/img/1726101127-1.jpg?raw=true",
+    "titleImgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/public/img/1724199450-2.webp",
     "content":"오류 난 인생을 재부팅하려는 여자와",
     "content1":"흑역사 재생기 엄친아의 소꿉친구 로코",
     "createdAt": 1591714800000,
@@ -12,8 +12,8 @@
   {
     "id": 2,
     "title": "백패커2",
-    "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/F-webp-1920.webp",
-    "titleImgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/F-webp-1024.webp",
+    "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/public/img/F-webp-1920.webp",
+    "titleImgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/public/img/F-webp-1024.webp",
     "content":"우리가 가는 곳이 곧 주방!",
     "content1":"극한의 출장 요리단이 간다!",
     "createdAt": 1591714800000,
@@ -22,8 +22,8 @@
   {
     "id": 3,
     "title": "가족멜로",
-    "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/1723169426-1.webp",
-    "titleImgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/src/components/img/1723169406-2.webp",
+    "imgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/public/img/1723169426-1.webp",
+    "titleImgUrl": "https://raw.githubusercontent.com/reeyounghyun/clone-tving/main/public/img/1723169406-2.webp",
     "content":"11년전 버린 남편이 우리집 건물주?",
     "content1":"피 튀기는 패밀리 멜로 드라마",
     "createdAt": 1591714800000,
