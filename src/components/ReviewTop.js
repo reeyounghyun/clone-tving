@@ -23,7 +23,7 @@ function ReviewTopItem({ item, index }) {
       </div>
 
       <div className="ReviewTopItem-title">
-        <p>{item.title}</p>
+        {/* <p>{item.title}</p> */}
       </div>
     </div>
   );
@@ -32,19 +32,35 @@ function ReviewTopItem({ item, index }) {
 function ReviewTopList({ items }) {
   return (
     <div className="ReviewTopList">
-      <h3 className="ReviewTopList-title">오늘의 티빙 TOP 20</h3>
+      <h3 class="text-white text-[1.333rem] font-bold mb-[0.666rem] lg:text-[1.666rem] leading-normal h-[2.416rem]">오늘의 티빙 TOP 20</h3>
       <Swiper
       
         slidesPerView={5}
-        spaceBetween={-300}
+        spaceBetween={30}
         centeredSlides={false}
         pagination={{
           clickable: true,
         }}
         className="topListSlirder"
+        breakpoints={{
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+          1440: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        }}
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
             <ReviewTopItem item={item} index={index} />
           </SwiperSlide>
-   
+        ))}
+      </Swiper>
+    </div>
+  );
+}
+
+export default ReviewTopList;

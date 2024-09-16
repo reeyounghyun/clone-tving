@@ -27,12 +27,12 @@ function Header() {
               </ul>
             </nav>
           </div>
-          <div className='flex items-center'>
+          <div className='flex items-center gap-6'>
             <div className=''>
-              <img src={Search} width={25} height={25} alt="search" />
+              <img src={Search} width={36} height={36} alt="search" />
             </div> 
             <div className=''>
-              <img src={Profile} width={25} height={25} alt="profile" />
+              <img src={Profile} width={36} height={36} alt="profile" />
             </div> 
           </div>
         </div>
