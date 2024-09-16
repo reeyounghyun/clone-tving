@@ -1,3 +1,4 @@
+
 body{
   position: relative;
   background-color: #000;
@@ -53,7 +54,7 @@ li{
 }
 
 @media screen and (max-width:1980px) {
-  .swiper-wrapper{
+  .ReviewTopList .swiper-wrapper{
     margin-left: 4rem;
   }
 }
@@ -94,9 +95,6 @@ li{
 .mySwiper:hover .swiper-button-prev1 {
   opacity: 1;
 }
-
-
-
 
 /* 네비게이션 버튼 기본적으로 숨기기 */
 .swiper-button-next,

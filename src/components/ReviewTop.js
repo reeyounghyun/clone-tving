@@ -31,7 +31,7 @@ function ReviewTopItem({ item, index }) {
 
 function ReviewTopList({ items }) {
   return (
-    <div className="ReviewTopList">
+    <div className="ReviewTopList lists pt-[1.333rem] pb-[1.333rem] relative">
       <h3 class="text-white text-[1.333rem] font-bold mb-[0.666rem] lg:text-[1.666rem] leading-normal h-[2.416rem]">오늘의 티빙 TOP 20</h3>
       <Swiper
       
