@@ -132,7 +132,6 @@ li{
   height: 0.667rem;
   margin: 0.333rem;
   border-radius: 9999px;
-
 }
 
 .custom-bullet {
@@ -150,4 +149,63 @@ li{
 .custom-bullet.swiper-pagination-bullet-active {
   background-color: #ffffff;  /* 활성화된 불릿 빨간색 */
   opacity: 1;                 /* 활성화된 불릿 불투명 */
+}
+
+/* listTOP btn 커스텀 */
+.ListSlirder{
+  position: relative;
+}
+
+.custom-top-prev,
+.custom-top-next {
+  display: block;
+}
+
+.custom-nav-btn .custom-top-prev,
+.custom-nav-btn .custom-top-next {
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  color: #fff;
+}
+
+.custom-nav-btn .custom-top-prev {
+  left: -39px;
+}
+
+.custom-nav-btn .custom-top-next {
+  right: -39px;
+}
+
+
+/* list btn 커스텀 */
+.ListSlirder{
+  position: relative;
+}
+
+.custom-list-prev,
+.custom-list-next {
+  display: block;
+}
+
+.custom-nav-btn .custom-list-prev,
+.custom-nav-btn .custom-list-next {
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  color: #fff;
+}
+
+.custom-nav-btn .custom-list-prev {
+  left: -39px;
+}
+
+.custom-nav-btn .custom-list-next {
+  right: -39px;
 }

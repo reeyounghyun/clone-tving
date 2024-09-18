@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules'; // 변경된 경로로 수정
-import { useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -25,19 +24,6 @@ function BannerItem({ item, index }) {
 }
 
 function BannerList({ items }) {
-
-  useEffect(() => {
-    // Swiper가 마운트된 후 DOM 요소를 참조하여 네비게이션 버튼을 연결
-    const nextButton = document.querySelector('.custom-next');
-    const prevButton = document.querySelector('.custom-prev');
-
-    // Swiper가 렌더링 후에 네비게이션 버튼을 참조하도록 해줌
-    if (nextButton && prevButton) {
-      nextButton.classList.add('swiper-button-next');
-      prevButton.classList.add('swiper-button-prev');
-    }
-  }, []); // 컴포넌트가 마운트될 때만 실행
-
   return (
     <div className="lists pt-[1.333rem] pb-[1.333rem] relative">
       {/* 커스텀 네비게이션 버튼 */}
@@ -50,23 +36,23 @@ function BannerList({ items }) {
       <div className="custom-pagination"></div>
 
       <Swiper
-        modules={[Navigation, Pagination]}  // 네비게이션과 페이지네이션 모듈 추가
-        slidesPerView={1}                  // 한 번에 하나의 슬라이드만 보이게 설정
+        modules={[Navigation, Pagination]}  
+        slidesPerView={1}                 
         spaceBetween={-10}  
-        speed={600}                 // 슬라이드 사이 간격
+        speed={600}                 
         pagination={{
-          clickable: true,                 // 페이지네이션 클릭 가능
-          el: '.custom-pagination',        // 커스텀 페이지네이션 선택자
+          clickable: true,               
+          el: '.custom-pagination',     
           renderBullet: (index, className) => {
             return `<span class="${className} custom-bullet">${index + 1}</span>`;
           },
         }}
         navigation={{
-          nextEl: '.custom-next',          // 커스텀 Next 버튼
-          prevEl: '.custom-prev',          // 커스텀 Prev 버튼
-        }}                                 // 커스텀 네비게이션 버튼 지정
+          nextEl: '.custom-next',         
+          prevEl: '.custom-prev',          
+        }}                                 
         className="topListSlider"
-        centeredSlides={true}              // 슬라이드를 가운데로 정렬
+        centeredSlides={true}    
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
