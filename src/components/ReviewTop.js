@@ -21,7 +21,6 @@ function ReviewTopItem({ item, index }) {
           ></svg>
         )}
       </div>
-
       {/* <div className="ReviewTopItem-title">
         <p>{item.title}</p>
       </div> */}

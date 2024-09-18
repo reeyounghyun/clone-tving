@@ -9,7 +9,7 @@ function Header() {
         <div className='flex items-center justify-between'>
           <div className='flex items-center h-[64px]'>
             <div className='mr-[2rem]'>
-              <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/img/logo.png?raw=true' width={117} height={48} alt="Logo" />
+              <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/logo.png?raw=true' width={117} height={48} alt="Logo" />
             </div>
             <nav className='nav'>
               <ul className='flex items-center gap-3'>
@@ -29,7 +29,7 @@ function Header() {
               <img src='/icon_search.svg' width={36} height={36} alt="search" />
             </div> 
             <div>
-              <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/img/profile.png?raw=true' width={36} height={36} alt="profile" />
+              <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/profile.png?raw=true' width={36} height={36} alt="profile" />
             </div> 
           </div>
         </div>
