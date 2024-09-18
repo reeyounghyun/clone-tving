@@ -18,24 +18,22 @@ function EntertItem({ item, index }) {
             viewBox="0 0 33 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-          ></svg>
+          >
+          </svg>
         )}
       </div>
-
-      <div className="ReviewTopItem-title">
-        {/* <p>{item.title}</p> */}
-      </div>
+      {/* <div className="ReviewTopItem-title">
+        <p>{item.title}</p>
+      </div> */}
     </div>
   );
 }
-
 
 function EntertList({ items }) {
   return (
     <div className="ReviewList lists pt-[1.333rem] pb-[1.333rem] relative">
       <h3 class="text-white text-[1.333rem] font-bold mt-[0.666rem] lg:text-[1.666rem] leading-normal h-[2.416rem]">지금 방영 중인 인기 예능</h3>
       <Swiper
-      
         slidesPerView={5}
         spaceBetween={30}
         centeredSlides={false}

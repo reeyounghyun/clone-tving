@@ -25,10 +25,10 @@ function Header() {
             </nav>
           </div>
           <div className='flex items-center gap-6'>
-            <div className=''>
+            <div>
               <img src='/icon_search.svg' width={36} height={36} alt="search" />
             </div> 
-            <div className=''>
+            <div>
               <img src='https://github.com/reeyounghyun/clone-tving/blob/main/public/img/profile.png?raw=true' width={36} height={36} alt="profile" />
             </div> 
           </div>

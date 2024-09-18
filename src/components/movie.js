@@ -29,7 +29,6 @@ function MovieItem({ item, index }) {
   );
 }
 
-
 function MovieList({ items }) {
   return (
     <div className="ReviewList lists pt-[1.333rem] pb-[1.333rem] relative">

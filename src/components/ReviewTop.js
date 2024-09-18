@@ -22,9 +22,9 @@ function ReviewTopItem({ item, index }) {
         )}
       </div>
 
-      <div className="ReviewTopItem-title">
-        {/* <p>{item.title}</p> */}
-      </div>
+      {/* <div className="ReviewTopItem-title">
+        <p>{item.title}</p>
+      </div> */}
     </div>
   );
 }
