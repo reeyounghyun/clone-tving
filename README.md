@@ -1,9 +1,9 @@
 clone-tving -main
 
-[제목]
+[제목] <br/>
 티빙 첫화면, 메인페이지 클론코딩
 
-[사용언어] 
+[사용언어] <br/>
 React. jacvScript, html, tailwindcss
 
 [작업기간]
