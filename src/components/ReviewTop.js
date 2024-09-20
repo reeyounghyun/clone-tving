@@ -12,7 +12,7 @@ function ReviewTopItem({ item, index }) {
         <img className="ReviewTopItem-img" src={item.imgUrl} alt={item.title} />
         <p className="text-[4rem] italic pr-[7px] num">{index + 1}</p>
       </div>
-      <div className="label-wrapper newepisode-label-wrapper absolute sm:w-[2rem] sm:h-[1.333rem] sm:top-[0.166rem] sm:left-[0.166rem] md:top-[15px] md:left-[-5px] md:w-[2.75rem] md:h-[1.833rem] z-[30]">
+      <div className="label-wrapper newepisode-label-wrapper absolute sm:w-[2rem] sm:h-[1.333rem] sm:top-[0.166rem] sm:left-[0.166rem] md:top-[15px] md:left-[-5px] md:w-[1.75rem] md:h-[1.833rem] z-[30]">
           <svg viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#label_new_svg__clip0_5239_157044)">
               <g clipPath="url(#label_new_svg__clip1_5239_157044)">
@@ -29,8 +29,7 @@ function ReviewTopItem({ item, index }) {
               </clipPath>
             </defs>
           </svg>
-        </div>
-
+      </div>
       {/* <div className="ReviewTopItem-title">
         <p>{item.title}</p>
       </div> */}
@@ -64,7 +63,7 @@ function ReviewTopList({ items }) {
       <Swiper
         modules={[Navigation]}
         slidesPerView={6}
-        spaceBetween={30}
+        spaceBetween={40}
         centeredSlides={false}
         navigation={{
           nextEl: '.custom-top-next',

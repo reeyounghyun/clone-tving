@@ -138,17 +138,17 @@ li{
   background-color: rgba(255, 255, 255, 0.3);
   width: 12px;
   height: 12px;
-  border-radius: 50%;     /* 원형 버튼 */
+  border-radius: 50%;    
   margin: 0 5px;
   display: inline-block;
   cursor: pointer;
-  opacity: 0.5;           /* 기본 불릿 투명도 */
+  opacity: 0.5;          
   text-indent: -9999px;
 }
 
 .custom-bullet.swiper-pagination-bullet-active {
-  background-color: #ffffff;  /* 활성화된 불릿 빨간색 */
-  opacity: 1;                 /* 활성화된 불릿 불투명 */
+  background-color: #ffffff;  
+  opacity: 1;               
 }
 
 /* listTOP btn 커스텀 */
@@ -208,4 +208,8 @@ li{
 
 .custom-nav-btn .custom-list-next {
   right: -39px;
+}
+
+.topSlirder .swiper-slide:nth-child(1){
+  margin-left: 40px;
 }
