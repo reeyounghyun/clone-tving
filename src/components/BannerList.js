@@ -13,7 +13,7 @@ function BannerItem({ item, index }) {
         <img className="" src={item.imgUrl} alt={item.title} />
       </div>
       <div className="absolute z-[100] left-[30px] bottom-[60px]">
-        <img className="ReviewTopItem-img w-[494px]" src={item.titleImgUrl} alt={item.title} />
+        <img className="ReviewTopItem-img w-[60%] md:w-[494px]" src={item.titleImgUrl} alt={item.title} />
         <div className="mt-[1.33rem] font-normal leading-normal line-clamp-2">
           <p>{item.content}</p>
           <p>{item.content1}</p>
@@ -37,8 +37,8 @@ function BannerList({ items }) {
 
       <Swiper
         modules={[Navigation, Pagination]}  
-        slidesPerView={1}                 
-        spaceBetween={-10}  
+        slidesPerView={1}
+        spaceBetween={0}
         speed={600}                 
         pagination={{
           clickable: true,               

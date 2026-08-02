@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import { useState } from 'react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import './ReviewList.css';
 import './common.css';
 
@@ -38,26 +38,16 @@ function ReviewTopItem({ item, index }) {
 }
 
 function ReviewTopList({ items }) {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div 
-      className="custom-nav-btn lists pt-[1.333rem] pb-[1.333rem] relative"
-      onMouseEnter={() => setIsHovered(true)}  // 마우스가 슬라이더에 올라가면 네비게이션 보이게
-      onMouseLeave={() => setIsHovered(false)} // 마우스가 벗어나면 네비게이션 숨김
-    >
+    <div className="custom-nav-btn lists pt-[1.333rem] pb-[1.333rem] relative">
       <h3 className="text-white text-[1.333rem] font-bold mb-[0.666rem] lg:text-[1.666rem] leading-normal h-[2.416rem]">
         오늘의 티빙 TOP 20
       </h3>
 
       {/* 커스텀 네비게이션 버튼 */}
       <div className="custom-nav-btn">
-        <button 
-          className={`swiper-button-prev custom-top-prev ${isHovered ? 'visible' : 'invisible'}`} 
-        ></button>
-        <button 
-          className={`swiper-button-next custom-top-next ${isHovered ? 'visible' : 'invisible'}`} 
-        ></button>
+        <button className="swiper-button-prev custom-top-prev"></button>
+        <button className="swiper-button-next custom-top-next"></button>
       </div>
 
       <Swiper

@@ -12,7 +12,7 @@ import EntertList from '../entert.json';
 
 function App() {
   return (
-    <div className='px-[4rem]'>
+    <div className='px-[4rem] pt-[64px]'>
         <Header/>
         <BannerList items={banner} />
         <ReviewTop items={items} />

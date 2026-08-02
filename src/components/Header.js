@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Header() {
   const navItems = ['시리즈', '영화', '라이브', 'KBO'];  // 문자열 배열로 수정
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div>
-      <header className='relative'>
+      <header
+        className={`fixed top-0 left-0 w-full z-[1000] px-[4rem] transition-all duration-300 ${
+          scrolled ? 'bg-black' : 'bg-gradient-to-b from-black/70 via-black/30 to-transparent'
+        }`}
+      >
         <div className='flex items-center justify-between'>
           <div className='flex items-center h-[64px]'>
             <div className='mr-[2rem]'>

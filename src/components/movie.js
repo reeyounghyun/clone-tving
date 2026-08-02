@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper'; // 네비게이션 모듈 제거
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import './ReviewList.css';
 import './common.css';
 
@@ -33,8 +34,18 @@ function MovieList({ items }) {
   return (
     <div className="ReviewList lists pt-[1.333rem] pb-[1.333rem] relative">
       <h3 class="text-white text-[1.333rem] font-bold mt-[0.666rem] lg:text-[1.666rem] leading-normal h-[2.416rem]">지금 방영 중인 인기 영화</h3>
+
+      <div className="custom-nav-btn">
+        <button className="swiper-button-prev custom-movie-prev"></button>
+        <button className="swiper-button-next custom-movie-next"></button>
+      </div>
+
       <Swiper
-      
+        modules={[Navigation]}
+        navigation={{
+          nextEl: '.custom-movie-next',
+          prevEl: '.custom-movie-prev',
+        }}
         slidesPerView={5}
         spaceBetween={30}
         centeredSlides={false}

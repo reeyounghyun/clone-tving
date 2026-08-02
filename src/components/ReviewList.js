@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-
-import { useState } from 'react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import './ReviewList.css';
 import './common.css';
 
@@ -32,25 +31,15 @@ function ReviewItem({ item, index }) {
 
 
 function ReviewList({ items }) {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div 
-      className="ReviewList lists pt-[1.333rem] pb-[1.333rem] relative"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="ReviewList lists pt-[1.333rem] pb-[1.333rem] relative">
       <h3 className="text-white text-[1.333rem] font-bold mt-[0.666rem] lg:text-[1.666rem] leading-normal h-[2.416rem]">
         지금 방영 중인 인기 시리즈
       </h3>
 
       <div className="custom-nav-btn">
-        <button 
-          className={`swiper-button-prev custom-list-prev ${isHovered ? 'visible' : 'invisible'}`} 
-        ></button>
-        <button 
-          className={`swiper-button-next custom-list-next ${isHovered ? 'visible' : 'invisible'}`} 
-        ></button>
+        <button className="swiper-button-prev custom-list-prev"></button>
+        <button className="swiper-button-next custom-list-next"></button>
       </div>
 
       <Swiper

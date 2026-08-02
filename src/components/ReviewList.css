@@ -210,6 +210,64 @@ li{
   right: -39px;
 }
 
+/* 영화 / 예능 btn 커스텀 */
+.custom-movie-prev,
+.custom-movie-next,
+.custom-entert-prev,
+.custom-entert-next {
+  display: block;
+}
+
+.custom-nav-btn .custom-movie-prev,
+.custom-nav-btn .custom-movie-next,
+.custom-nav-btn .custom-entert-prev,
+.custom-nav-btn .custom-entert-next {
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+  color: #fff;
+}
+
+.custom-nav-btn .custom-movie-prev,
+.custom-nav-btn .custom-entert-prev {
+  left: -39px;
+}
+
+.custom-nav-btn .custom-movie-next,
+.custom-nav-btn .custom-entert-next {
+  right: -39px;
+}
+
+/* 처음엔 다음 버튼만, 페이지를 넘기면 이전 버튼이 나타남
+   (Swiper가 첫 슬라이드에서 자동으로 붙이는 swiper-button-disabled 이용) */
+.custom-nav-btn .custom-top-prev.swiper-button-disabled,
+.custom-nav-btn .custom-list-prev.swiper-button-disabled,
+.custom-nav-btn .custom-movie-prev.swiper-button-disabled,
+.custom-nav-btn .custom-entert-prev.swiper-button-disabled {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .custom-nav-btn .custom-prev,
+  .custom-nav-btn .custom-top-prev,
+  .custom-nav-btn .custom-list-prev,
+  .custom-nav-btn .custom-movie-prev,
+  .custom-nav-btn .custom-entert-prev {
+    left: 8px;
+  }
+
+  .custom-nav-btn .custom-next,
+  .custom-nav-btn .custom-top-next,
+  .custom-nav-btn .custom-list-next,
+  .custom-nav-btn .custom-movie-next,
+  .custom-nav-btn .custom-entert-next {
+    right: 8px;
+  }
+}
+
 .topSlirder .swiper-slide:nth-child(1){
   margin-left: 40px;
 }
