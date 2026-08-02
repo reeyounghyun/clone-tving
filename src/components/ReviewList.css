@@ -251,6 +251,28 @@ li{
 }
 
 @media screen and (max-width: 1023px) {
+  /* 이 폭부터는 버튼이 캐러셀 콘텐츠 위에 겹쳐 뜨므로,
+     콘텐츠와 구분되도록 반투명 원형 배경을 얹는다 */
+  .custom-nav-btn .custom-prev,
+  .custom-nav-btn .custom-next,
+  .custom-nav-btn .custom-top-prev,
+  .custom-nav-btn .custom-top-next,
+  .custom-nav-btn .custom-list-prev,
+  .custom-nav-btn .custom-list-next,
+  .custom-nav-btn .custom-movie-prev,
+  .custom-nav-btn .custom-movie-next,
+  .custom-nav-btn .custom-entert-prev,
+  .custom-nav-btn .custom-entert-next {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
   .custom-nav-btn .custom-prev,
   .custom-nav-btn .custom-top-prev,
   .custom-nav-btn .custom-list-prev,
